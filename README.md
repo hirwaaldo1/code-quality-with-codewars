@@ -40,7 +40,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions, suggestions, or feedback, please feel free to reach out:
 
-- Email support: hirwaaldo1@gmail.com
+- My Email : hirwaaldo1@gmail.com
 - Project Link: [https://github.com/hirwaaldo1/code-quality-with-codewars](https://github.com/hirwaaldo1/code-quality-with-codewars)
 
 Happy coding!
