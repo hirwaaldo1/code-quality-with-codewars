@@ -18,11 +18,15 @@ function solution(roman) {
 
     if (next > current) {
       result.push(next - current);
+      // remove next element if it's already added
       romanArray.splice(i + 1, 1);
     } else {
       result.push(current);
     }
   }
 
-  return result.reduce((a, b) => a + b, 0);
+  return result.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
 }
