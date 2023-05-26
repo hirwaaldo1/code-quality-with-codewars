@@ -1,4 +1,4 @@
-const ROMANNUMBERS = {
+const ROMAN_NUMBERS = {
   I: 1,
   V: 5,
   X: 10,
@@ -13,8 +13,8 @@ function solution(roman) {
   const romanArray = roman.split("");
 
   for (let i = 0; i < romanArray.length; i++) {
-    const current = ROMANNUMBERS[romanArray[i]];
-    const next = ROMANNUMBERS[romanArray[i + 1]];
+    const current = ROMAN_NUMBERS[romanArray[i]];
+    const next = ROMAN_NUMBERS[romanArray[i + 1]];
 
     if (next > current) {
       result.push(next - current);

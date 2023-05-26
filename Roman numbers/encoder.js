@@ -17,10 +17,11 @@ const ROMANS = {
 function convertToRoman(number) {
   let result = "";
 
-  for (let symbol in ROMANS) {
-    while (number >= ROMANS[symbol]) {
+  for (const symbol in ROMANS) {
+    const value = ROMANS[symbol];
+    while (number >= value) {
       result += symbol;
-      number -= ROMANS[symbol];
+      number -= value;
     }
   }
 
