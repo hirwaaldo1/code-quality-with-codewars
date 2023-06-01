@@ -1,8 +1,8 @@
 const VOWELS_REGEX = /[euaio]/gi;
 
-function reverseVowels(string) {
-  if (string === "") {
-    return "";
+export default function reverseVowels(string) {
+  if (string === '') {
+    return '';
   }
 
   const allVowels = string.match(VOWELS_REGEX);
@@ -11,7 +11,7 @@ function reverseVowels(string) {
   }
 
   const reversedVowels = allVowels.reverse();
-  const textList = string.split("");
+  const textList = string.split('');
 
   textList.forEach((letter, index) => {
     if (letter.match(VOWELS_REGEX)) {
@@ -19,5 +19,5 @@ function reverseVowels(string) {
     }
   });
 
-  return textList.join("");
+  return textList.join('');
 }

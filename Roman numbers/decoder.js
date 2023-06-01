@@ -8,9 +8,9 @@ const ROMAN_NUMBERS = {
   M: 1000,
 };
 
-function solution(roman) {
+export default function solution(roman) {
   const result = [];
-  const romanArray = roman.split("");
+  const romanArray = roman.split('');
 
   for (let i = 0; i < romanArray.length; i++) {
     const current = ROMAN_NUMBERS[romanArray[i]];
@@ -27,6 +27,6 @@ function solution(roman) {
 
   return result.reduce(
     (accumulator, currentValue) => accumulator + currentValue,
-    0
+    0,
   );
 }
