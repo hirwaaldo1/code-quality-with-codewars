@@ -1,4 +1,4 @@
-function roundRobin(jobs, slice, index) {
+export default function roundRobin(jobs, slice, index) {
   let timeTakes = 0;
 
   while (jobs[index] > 0) {
@@ -7,13 +7,12 @@ function roundRobin(jobs, slice, index) {
         if (jobs[index] <= 0) {
           break;
         }
-        
-        // we must add the slice or if the slice if less that the current job's we add the current job
+
+        // If the slice is less than the current job's, add the slice
         const timeTaken = Math.min(jobs[i], slice);
         timeTakes += timeTaken;
         // Subtract the time taken from the current job
         jobs[i] -= timeTaken;
-
       }
     }
   }

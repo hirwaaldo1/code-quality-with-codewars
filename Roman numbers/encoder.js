@@ -14,9 +14,10 @@ const ROMANS = {
   I: 1,
 };
 
-function convertToRoman(number) {
-  let result = "";
+export default function convertToRoman(number) {
+  let result = '';
 
+  // eslint-disable-next-line guard-for-in
   for (const symbol in ROMANS) {
     const value = ROMANS[symbol];
     while (number >= value) {
