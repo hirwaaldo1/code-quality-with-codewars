@@ -1,4 +1,4 @@
-const VOWELS_REGEX = /[euaio]/gi;
+const VOWELS_REGEX = /[aeiou]/gi;
 
 export default function reverseVowels(string) {
   if (string === '') {
@@ -11,10 +11,11 @@ export default function reverseVowels(string) {
   }
 
   const reversedVowels = allVowels.reverse();
-  const textList = string.split('');
+  const textList = [...string];
 
+  // eslint-disable-next-line unicorn/no-array-for-each
   textList.forEach((letter, index) => {
-    if (letter.match(VOWELS_REGEX)) {
+    if (VOWELS_REGEX.test(letter)) {
       textList[index] = reversedVowels.shift();
     }
   });

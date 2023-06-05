@@ -2,6 +2,7 @@ export default function roundRobin(jobs, slice, index) {
   let timeTakes = 0;
 
   while (jobs[index] > 0) {
+    // eslint-disable-next-line unicorn/prevent-abbreviations
     for (let i = 0; i < jobs.length; i++) {
       if (jobs[i] !== 0) {
         if (jobs[index] <= 0) {

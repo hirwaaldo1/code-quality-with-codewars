@@ -1,0 +1,16 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/your-username/code-quality-with-codewars/blob/main/LICENSE)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-plugin-unicorn": "^47.0.0"
+  }
+}
