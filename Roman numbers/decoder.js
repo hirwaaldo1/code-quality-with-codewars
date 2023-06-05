@@ -10,16 +10,16 @@ const ROMAN_NUMBERS = {
 
 export default function solution(roman) {
   const result = [];
-  const romanArray = roman.split('');
+  const romanArray = [...roman];
 
-  for (let i = 0; i < romanArray.length; i++) {
-    const current = ROMAN_NUMBERS[romanArray[i]];
-    const next = ROMAN_NUMBERS[romanArray[i + 1]];
+  for (let index = 0; index < romanArray.length; index++) {
+    const current = ROMAN_NUMBERS[romanArray[index]];
+    const next = ROMAN_NUMBERS[romanArray[index + 1]];
 
     if (next > current) {
       result.push(next - current);
       // remove next element if it's already added
-      romanArray.splice(i + 1, 1);
+      romanArray.splice(index + 1, 1);
     } else {
       result.push(current);
     }
